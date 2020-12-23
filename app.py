@@ -10,7 +10,7 @@ def index():
 	return render_template('MyMailProjForm.html')
 
 
-@app.route('/login', methods=['POST','GET'])
+@app.route('/sent', methods=['POST','GET'])
 def login():
 	#print(list(request.form['re'].split(",")),"***************************")
 	app.config['MAIL_SERVER'] = 'smtp.gmail.com' 
