@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>
+		Flask
+	</title>
+</head>
+<body>
+
+	
+	<style>
+		body {
+		  background-image: url('bg.jpg');
+		}
+	</style>
+	<center><h1>Hamdan's Flask Mail App </h1></center>
+
+	<form action="http://localhost:5000/login" method="POST">
+
+		<table>
+			<tr>
+				<td>Sender E-mail :</td>
+				<td><input type="text" name="se" /> (Make sure : <a href="https://www.google.com/settings/security/lesssecureapps">this  Setting </a> for the entered email address is on and then again return back to this page)</td>
+			</tr>
+			<tr>
+				<td>Sender E-mail's Password :</td>
+				<td><input type="password" name="pa" /></td>
+			</tr>
+			<tr>
+				<td>Recipients : </td>
+				<td><input type="text" name="re" /> (Enter the Mails separated by a comma)</td>
+			</tr>
+			<tr>
+				<td>Subject of the mail : </td>
+				<td><input type="text" name="su" /></td>
+			</tr>
+			<tr>
+				<td>Body of the mail : </td>
+				<td><<textarea name="bo" rows="10" cols="100">&#13;&#13;&#13;&#13;&#13; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Sent from Hamdan's Mail app </textarea></td>
+			</tr>
+		</table>
+		<p><input type="submit" value="submit" /></p>
+	</form>
+</body>
+</html>
